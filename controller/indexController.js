@@ -1,4 +1,10 @@
+/*
+File name: indexCotroller.js
+Author's name: Tanveer
+Website name: azuresite.com
+File Description: This file render view.
 
+*/
 
 exports.homePage = (req, res, next) => {
     res.render('index', { title: 'Home' });
