@@ -1,5 +1,29 @@
+<!-- File name: contact.ejs
+Author's name: Tanveer
+Website name: azuresite.com
+File Description:  -->
+
 <% include partials/header %>
 <body>
     <h1><%= title %></h1>
-    <p><%= biodata %></p>
+    <form method="POST" >
+        <div>
+            <input id="name" name="name">
+            <label for="name">Name</label>
+        </div>
+
+        <div>
+            <input id="email" name="email">
+            <label for="email">Email</label>
+        </div>
+
+        <div>
+            <input id="message" name="message">
+            <label for="message">Message</label>
+        </div>
+        <br>
+        <button type="submit">
+            Submit
+        </button>
+    </form>
 <% include partials/footer %>
